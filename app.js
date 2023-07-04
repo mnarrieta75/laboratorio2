@@ -88,7 +88,7 @@ app.get("/", (req,res) => {
 
 
 
-const PORT = 3001
+const PORT = process.env.PORT
 app.listen(PORT, (err) => {
     if (err) {console.log("Error al iniciar el servidor")}
     else { console.log("Servidor corriendo en el puerto ", PORT)}
