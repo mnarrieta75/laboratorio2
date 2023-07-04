@@ -1,0 +1,3 @@
+https://www.sohamkamani.com/nodejs/mongodb-express-rest-api/
+
+https://dev.to/suhailkakar/building-a-restful-crud-api-with-node-js-express-and-mongodb-1541

@@ -1,0 +1,62 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Laboratorio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body><!-- Just an image -->
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+      </a>
+    </nav>
+<div class="container">
+<div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <h2>LABORATORIO</h2>  
+                        <div class="card">
+                            <div class="card-header">Elemento</div>
+                            <div class="card-body">
+
+                                <form name="formulario" id="formulario" class="form-horizontal" method="post" action="/creaElemento">
+
+                                
+                                    <div class="form-group">
+                                        <label for="elemento" class="cols-sm-2 control-label">Nombre elemento</label>
+                                        <div class="cols-sm-10">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre del elemento" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="password" class="cols-sm-2 control-label">Cantidad</label>
+                                        <div class="cols-sm-10">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                                <input type="text" class="form-control" name="cantidad" id="cantidad" placeholder="Cantidad" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group ">
+                                        <button type="submit" class="btn btn-primary btn-lg btn-block login-button">Dar de alta</button>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+</div>
+
+</body>
+</html>

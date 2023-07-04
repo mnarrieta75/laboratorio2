@@ -1,0 +1,52 @@
+[
+    {
+        "nombre": "Experimento Filadelfia",
+        "fechaini": "2023-12-10T13:45:00.000Z",
+        "descripcion": "Experimento para viajar en el tiempo",
+        "composicion": [
+            {
+                "elemento": "agua",
+                "cantidad": 5
+            },
+            {
+                "elemento": "sodio",
+                "cantidad": 4
+            },
+            {
+                "elemento": "litio",
+                "cantidad": 3
+            },
+            {
+                "elemento": "potasio",
+                "cantidad": 2
+            }
+
+        ]
+
+    },
+    {
+        "nombre": "Experimento Solar",
+        "fechaini": "2023-10-11T13:45:00.000Z",
+        "descripcion": "Experimento para viajar al Sol",
+        "composicion": [
+            {
+                "elemento": "agua",
+                "cantidad": 10
+            },
+            {
+                "elemento": "sodio",
+                "cantidad": 8
+            },
+            {
+                "elemento": "litio",
+                "cantidad": 6
+            },
+            {
+                "elemento": "potasio",
+                "cantidad": 5
+            }
+
+        ]
+
+    }
+]
