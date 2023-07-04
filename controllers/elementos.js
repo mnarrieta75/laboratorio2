@@ -1,5 +1,4 @@
 const Elemento = require('./../models/elemento')
-
 exports.listaElementos = (req, res) => {
     Elemento.find()
     .then(elementos => {
@@ -48,6 +47,26 @@ exports.listaElemento = (req, res, next) => {
       next(error);
     });
 };
+
+exports.verElementos = (req, res, next) => {
+  Elemento.find()
+    .then((elementos) => {
+      if (!elementos) {
+        // Handle resource not found error
+        const error = new Error('elements not found');
+        error.statusCode = 404;
+        throw error;
+      }
+      //res.json(elemento);
+      res.render("../views/pages/elementos", elementos)
+    })
+    .catch((error) => {
+      // Pass the error to the error handling middleware
+      next(error);
+    });
+};
+
+
 
 exports.actualizaElemento = (req, res, next) => {
   Elemento.findOneAndUpdate({_id: req.params.id},req.body)

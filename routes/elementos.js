@@ -4,6 +4,7 @@ const elementosController = require("./../controllers/elementos");
 const router = express.Router();
 
 router.get('/listaElementos', elementosController.listaElementos);
+router.get('/verElementos', elementosController.verElementos);
 router.get('/listaElemento/:id', elementosController.listaElemento);
 router.post('/creaElemento', elementosController.creaElemento);
 router.put('/actualizaElemento/:id', elementosController.actualizaElemento);
