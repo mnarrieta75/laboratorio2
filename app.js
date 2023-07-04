@@ -89,9 +89,22 @@ app.get("/", (req,res) => {
 
 
 const PORT = process.env.PORT
-app.listen(PORT, (err) => {
+if (!PORT)
+{
+  console.log("Puerto no definido")
+  const PORT='3001'
+  app.listen(PORT, (err) => {
     if (err) {console.log("Error al iniciar el servidor")}
     else { console.log("Servidor corriendo en el puerto ", PORT)}
 })
+}
+else
+{
+  app.listen(PORT, (err) => {
+    if (err) {console.log("Error al iniciar el servidor")}
+    else { console.log("Servidor corriendo en el puerto ", PORT)}
+})
+}
+
 
 
